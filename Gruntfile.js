@@ -16,11 +16,11 @@ module.exports = function(grunt){
 		//minificar con uglify
 		uglify: {
 			options: {
-				banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n */\n'
+				banner: '/*\n <%= pkg.name %> \n Gabriel Hubermann | Hubermann.com | Buenosweb.com \n e: hubermann@gmail.com \n <%= grunt.template.today("yyyy-mm-dd") %> \n */\n'
 			},
 			build: {
 				files: {
-					'dist/js/magic.min.js': 'src/**/*.js'
+					'dist/js/main.min.js': 'src/**/*.js'
 				}
 			}
 		},
@@ -29,8 +29,8 @@ module.exports = function(grunt){
 		less: {
 			build: {
 				files:{
-					//vamos a compilar 'src/css/pretty.less' >> 'dist/css/pretty.css'
-					'dist/css/pretty.css': 'src/css/pretty.less'
+					//vamos a compilar 'src/css/main.less' >> 'dist/css/styles.css'
+					'dist/css/styles.css': 'src/css/main.less'
 				}
 			}
 		},
@@ -38,7 +38,7 @@ module.exports = function(grunt){
 		// cssmin
 		cssmin: {
 			options: {
-				banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n */\n'
+				banner: '/*\n <%= pkg.name %> \n Gabriel Hubermann | Hubermann.com | Buenosweb.com \n e: hubermann@gmail.com \n<%= grunt.template.today("yyyy-mm-dd") %> \n */\n'
 			},
 			build: {
 				files: {
