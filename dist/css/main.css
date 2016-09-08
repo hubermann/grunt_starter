@@ -3,11 +3,10 @@ html {
   font-size: 100%;
 }
 body {
-  background: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #313131;
+  color: $four;
   line-height: 28px;
   overflow-x: hidden !important;
   margin: auto !important;
@@ -175,4 +174,10 @@ h5 {
   .intro-header .post-heading .subheading {
     font-size: 30px;
   }
+}
+h1 {
+  color: #00b1c8;
+}
+h2 {
+  color: #c80007;
 }

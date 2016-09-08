@@ -30,7 +30,7 @@ module.exports = function(grunt){
 			build: {
 				files:{
 					//vamos a compilar 'src/css/main.less' >> 'dist/css/styles.css'
-					'dist/css/styles.css': 'src/css/main.less'
+					'dist/css/main.css': 'src/css/main.less'
 				}
 			}
 		},
@@ -42,7 +42,7 @@ module.exports = function(grunt){
 			},
 			build: {
 				files: {
-					'dist/css/style.min.css': 'dist/**/*.css'
+					'dist/css/styles.min.css': 'dist/**/*.css'
 				}
 			}
 		}
